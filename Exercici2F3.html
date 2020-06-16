@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exercici 2 Fase 3</title>
+</head>
+<body>
+<p id="output"></p>
+
+<script>
+var nombre = ["P", "i", "e", "r", "o"];
+//document.getElementById("output").innerHTML = name;
+var text,i;
+text = "";
+var mapNombre = new Map();
+var iterator_obj=mapNombre.entries();
+for(i = 0 ; i < nombre.length ; i++){
+	if(console.log(mapNombre.has(nombre[i]))){
+		
+	mapNombre.set(nombre[i], console.log(mapNombre.get(nombre[i]) + 1 ));
+	
+	}
+else{
+	mapNombre.set(nombre[i], 1);
+    }
+	document.write(iterator_obj.next().value,"<br>");
+}
+
+</script>
+</body>
+</html>
